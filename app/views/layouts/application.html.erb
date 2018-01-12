@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EvilChat</title>
+    <%= csrf_meta_tags %>
+
+    <!-- replacing link_tag with pack_tag uses CSS on a per-component basis -->
+    <%= stylesheet_pack_tag 'application', media: 'all' %>
+  </head>
+
+  <body>
+    <%= yield %>
+    <!-- replacing include_tag with pack_tag avoids the app-wode JS files
+         and just brings in what's bundled by Webpack from the application.js entry point -->
+    <%= javascript_pack_tag 'application' %>
+  </body>
+</html>
