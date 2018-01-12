@@ -1,6 +1,2 @@
-import "./application.css";
-
-document.body.insertAdjacentHTML(
-  "afterbegin",
-  "Webpacker works but not with npm!"
-);
+import "init";
+import "components/page/page";
