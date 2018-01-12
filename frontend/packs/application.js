@@ -1,3 +1,6 @@
-import "./application.css"
+import "./application.css";
 
-document.body.insertAdjacentHTML("afterbegin", "Webpacker works when you rake db:migrate!")
+document.body.insertAdjacentHTML(
+  "afterbegin",
+  "Webpacker works but not with npm!"
+);
